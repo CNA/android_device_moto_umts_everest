@@ -24,8 +24,11 @@ PRODUCT_COPY_FILES += \
     device/moto/umts_everest/prop/tty2ttyd:system/bin/tty2ttyd \
     device/moto/umts_everest/prop/libril.so:system/lib/libril.so \
     device/moto/umts_everest/prop/libpppd_plugin-ril.so:system/lib/libpppd_plugin-ril.so \
-    frameworks/base/data/etc/android.hardware.telephony.gsm.xml:system/etc/permissions/android.hardware.telephony.gsm.xml \
+    frameworks/native/data/etc/android.hardware.telephony.gsm.xml:system/etc/permissions/android.hardware.telephony.gsm.xml \
     device/sample/etc/apns-full-conf.xml:system/etc/apns-conf.xml 
+
+PRODUCT_PACKAGES += \
+    rild \
 
 # Overrides
 DEVICE_PACKAGE_OVERLAYS := \
