@@ -1,1 +1,1 @@
-include device/moto/wingray/AndroidBoard.mk
+include device/motorola/wingray/AndroidBoard.mk

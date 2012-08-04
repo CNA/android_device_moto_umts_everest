@@ -20,6 +20,6 @@
 # definition file).
 #
 
-include device/moto/wingray/BoardConfig.mk
+include device/motorola/wingray/BoardConfig.mk
 BOARD_KERNEL_CMDLINE :=
 

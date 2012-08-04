@@ -25,23 +25,14 @@ PRODUCT_PACKAGES := \
         LiveWallpapersPicker \
         VisualizationWallpapers
 
-# Camera
-PRODUCT_PACKAGES += \
-    Camera
-
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
 # This is where we'd set a backup provider if we had one
 #$(call inherit-product, device/sample/products/backup_overlay.mk)
-$(call inherit-product, device/moto/umts_everest/device.mk)
+$(call inherit-product, device/motorola/umts_everest/device.mk)
 
 # Discard inherited values and use our own instead.
 PRODUCT_NAME := full_umts_everest
 PRODUCT_DEVICE := umts_everest
-PRODUCT_BRAND := MOTO
-PRODUCT_MODEL := MZ601
-PRODUCT_MANUFACTURER := motorola
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_NAME=RTCOREEU \
-    BUILD_FINGERPRINT="MOTO/RTCOREEU/umts_everest:3.2/H.6.5-17-3/1321319666:user/ota-rel-keys,release-keys" \
-    PRIVATE_BUILD_DESC="umts_everest-user 3.2 H.6.5-17-3 1321319666 ota-rel-keys,release-keys"
+PRODUCT_BRAND := Android
+PRODUCT_MODEL := Full Android on Stingray
