@@ -87,4 +87,8 @@
 
     <bool name="config_umtsEverestRadio">true</bool>
     <bool name="config_hideMobileSignalOnWifi">true</bool>
+
+    <!-- sms support -->
+    <bool name="config_sms_capable">true</bool>
+
 </resources>
